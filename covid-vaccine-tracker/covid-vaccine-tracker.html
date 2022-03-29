@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link   rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap">
+    <script
+      src="https://kit.fontawesome.com/620f3808e1.js" 
+      crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="./covid-vaccine-tracker.css" />
+    <title>Covid Vaccine Tracker</title>
+  </head>
+  <body>
+     <!-- header of page -->
+     <header class="header">
+      <i class="fas fa-arrow-left back" id="back"></i>
+      <h1 class="covid-19">C<img src="../assets/coviddd.png" class="covid-img">vid-19</h1>
+      <img src="../assets/dark-mode.png"  id="icon"> 
+      
+  </header>
+    <!-- Search bar -->
+    <section class="Search-section">
+      <input
+        list="countries"
+        id="selectedCountry"
+        placeholder="     search..."
+      />
+      <datalist id="countries"></datalist>
+      <button id="search-button">Search</button>
+    </section>
+         <!-- Card Style -->
+         <article class="containar">
+          <figure class="green-img">
+              <img src="../assets/vaccine-number.png">
+           </figure>
+           <article id="number"></article>
+           <article class="vaccine-title">
+               <h1>Covid Vaccine Tracker</h1>
+           </article>
+            </article>
+                <!-- two button -->
+          <article class="two-button">
+            <button data-modal-target="#modal" class="btn-1">chart</button>
+            <button  class="btn-2" id="Symptoms-button">Symptoms</button>
+          </article>
+           <!-- Making popup -->
+           <article class="modal" id="modal">
+            <figure class="modal-header">
+              <button data-close-button class="close-button">&times;</button>
+            </figure>
+
+            <class="modal-body">
+              <svg width="100" height="100">
+                <circle r="25" cx="50" cy="50" id="myCircule" />
+              </svg>
+              <figure id="section-1"><h2 id="par-1"> covid-vaccine-tracker</h2>
+              <img src="../assets/green.png" width="20px"height="20px" id="img-1">
+            </figure>
+            
+            <article id="section-2">
+            <h2 id="par-2">else</h2>
+            <img src="../assets/white1.png" width="20px"height="20px" id="img-2"></article>
+        </class>
+           </article>
+
+        <article id="overlay"></article>
+        <script src="../covid-vaccine-tracker/covid-vaccine-tracker.js"></script>
+  </body>
+</html>

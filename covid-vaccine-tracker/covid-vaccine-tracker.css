@@ -1,0 +1,330 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --primary-color: #fbad37;
+  --secondary-color: #ffff;
+  --fonts-color: black;
+  --container-color: #ffff;
+}
+.dark-mode {
+  --primary-color: #fbad37;
+  --secondary-color: rgb(24, 23, 23);
+  --fonts-color: #fff;
+  --container-color: rgb(46 46 46);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--secondary-color);
+}
+.header {
+  height: 94px;
+  width: 100%;
+  box-shadow: 0px 5px 16px 0px #c2bfbf;
+  display: flex;
+}
+#back {
+  height: 22px;
+  margin-left: 15px;
+  margin-top: 36px;
+  font-size: 20px;
+  color: var(--fonts-color);
+}
+header .covid-19 {
+  padding-top: 25px;
+  padding-left: 20px;
+  color: var(--fonts-color);
+}
+.covid-img {
+  height: 26px;
+}
+#icon {
+  height: 60px;
+  float: right;
+  padding-right: 20px;
+  margin-left: 170px;
+  padding-top: 30px;
+}
+/* Style Search bar */
+
+#selectedCountry {
+  border: none;
+  outline: none;
+  background-color: #afaaaa9c;
+  width: 260px;
+  height: 55px;
+  border-radius: 40px 40px 40px 40px;
+  margin: 20px;
+  font-size: 25px;
+  padding-left: 20px;
+  color: var(--fonts-color);
+}
+#search-button {
+  background-color: #fc9906c0;
+  color: white;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 49px;
+  border-radius: 40px 40px 40px 40px;
+  margin-top: 15px;
+}
+/* Card Style */
+.containar {
+  width: 318px;
+  height: 323px;
+  background: var(--container-color);
+  box-shadow: 0px 5px 16px rgba(128, 128, 128, 0.2);
+  border-radius: 20px;
+  margin-left: 48px;
+  margin-top: 27px;
+}
+.green-img {
+  padding-left: 110px;
+  padding-top: 50px;
+}
+.fetchApiNumber {
+  width: 131px;
+  height: 31px;
+  padding-left: 105px;
+  padding-top: 15px;
+  color: #4bcc58;
+}
+.vaccine-title {
+  padding-top: 30px;
+  font-size: 25px;
+  padding-left: 10px;
+  text-align: center;
+  color: var(--fonts-color);
+}
+/* Style for two-button */
+.btn-1 {
+  width: 171px;
+  height: 54px;
+  background-color: #fbad37;
+  color: #ffff;
+  margin-top: 30px;
+  margin-left: 120px;
+  border-radius: 20px;
+  border: none;
+  font-size: 25px;
+}
+.btn-2 {
+  width: 171px;
+  height: 54px;
+  background-color: #fbad37;
+  color: #ffff;
+  border-radius: 20px;
+  border: none;
+  font-size: 25px;
+  margin-left: 120px;
+  margin-top: 40px;
+}
+/* popup style */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid rgb(250, 247, 247);
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #fffafa;
+  width: 500px;
+  max-width: 100%;
+  height: 90%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-left: 320px;
+  color: #ccd2e3;
+}
+.modal-body {
+  background-color: #f2eeee;
+  width: 414px;
+  height: 556px;
+}
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+circle {
+  fill: #69e876;
+  stroke: #655;
+  stroke-width: 50;
+  /* stroke-dasharray: 60 158; 2π × 25 ≈ 158 */
+}
+svg {
+  transform: rotate(-90deg);
+  background: #69e876;
+  border-radius: 50%;
+  margin-top: 143px;
+  margin-left: 140px;
+}
+#section-1 {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 37px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+#section-2 {
+  display: flex;
+  justify-content: space-around;
+}
+#img-1 {
+  margin-right: 80px;
+  margin-top: 2px;
+}
+#img-2 {
+  margin-left: 48px;
+  margin-top: 25px;
+}
+#par-1 {
+  text-shadow: 2px 2px #dcd4d4;
+}
+#par-2 {
+  margin-left: 60px;
+  text-shadow: 2px 2px #dcd4d4;
+  margin-top: 20px;
+}
+#number {
+  color: #fbad37;
+  font-size: 30px;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 1300px) {
+  .containar {
+    margin-left: 500px;
+    margin-top: 45px;
+    width: 400px;
+    height: 400px;
+  }
+  .header .covid-19 {
+    margin-left: 30px;
+  }
+
+  #number {
+    margin-left: 100px;
+    margin-top: 35px;
+  }
+  #icon {
+    margin-left: 900px;
+    margin-top: 10px;
+  }
+  #selectedCountry {
+    margin-top: 30px;
+    margin-left: 500px;
+    width: 274px;
+  }
+  .two-button {
+    margin-left: 400px;
+    margin-top: 20px;
+  }
+  .green-img {
+    margin-left: 39px;
+    margin-top: 30px;
+  }
+  .vaccine-title {
+    margin-top: 40px;
+  }
+
+  .modal {
+    width: 50%;
+  }
+  svg {
+    margin-left: 50%;
+  }
+  .modal-header .close-button {
+    margin-left: 77%;
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .containar {
+    margin-left: 300px;
+    margin-top: 50px;
+    width: 400px;
+    height: 400px;
+  }
+  header .covid-19 {
+    padding-top: 20px;
+    font-size: 40px;
+    margin-left: 30px;
+  }
+  #number {
+    margin-left: 130px;
+    margin-top: 35px;
+  }
+  .covid-img {
+    height: 30px;
+  }
+  #icon {
+    margin-left: 600px;
+    margin-top: 10px;
+  }
+  #selectedCountry {
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 274px;
+  }
+  .two-button {
+    margin-left: 200px;
+    margin-top: 20px;
+  }
+  .green-img {
+    margin-left: 39px;
+    margin-top: 30px;
+  }
+  .vaccine-title {
+    margin-top: 40px;
+  }
+  .modal-header .close-button {
+    font-size: 2.25rem;
+    margin-left: 80%;
+  }
+}
+svg {
+  margin-left: 40%;
+}

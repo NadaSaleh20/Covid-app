@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --primary-color : #FBAD37;
+    --secondary-color : #ffff;
+    --fonts-color : black ;
+}
+ .dark-mode {
+    --primary-color : #FBAD37;
+    --secondary-color : rgb(24, 23, 23);
+    --fonts-color : #fff ;
+} 
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:var(--secondary-color) ;
+}
+.header{
+    height: 94px;
+    width: 100%;
+    box-shadow: 0px 5px 16px 0px  #c2bfbf;
+    display: flex;
+}
+.header .back{
+    height: 22px;
+    margin-left: 15px;
+    margin-top: 36px;
+    font-size: 20px;
+    color:var(--fonts-color);
+
+}
+header .covid-19 {
+    padding-top: 25px;
+    padding-left: 20px;
+    color:var(--fonts-color) ;
+
+}
+.covid-img{
+    height: 26px;
+}
+header .dark-mode{
+    height: 25px;
+    float: right;
+    padding-right: 20px;
+    margin-left: 170px;
+    padding-top: 33px;
+
+
+}
+.container{
+    text-align: center;
+    
+}
+.container .part{
+    width: 388px;
+    height: 530px;
+    margin: 47px 0 57px 10px;
+    text-align: center;
+    padding-right: 11px;
+    box-shadow: 0px 5px 16px 0px #c2bfbf;
+    border-radius: 20px;
+    
+}
+.container .part .title{
+    margin-top: 21px;
+    margin-bottom: 21px;
+    font-size: 36px;
+}
+.container .part .para {
+    text-align: center;
+    margin: 5px 30 0px 30px;
+    font-size: 27px;
+    font-weight: bold;
+    color:var(--fonts-color) ;
+}
+.img-con{
+    height: 126px;
+    margin-bottom: 34px;
+    margin-top: 51px;
+}
+.number{
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 40px;
+    color: #ff9500;
+    text-decoration: none;
+}
+
+@media only screen and (min-width :1300px){
+    .container .part {
+    width: 1260px;
+    height: 900px;
+    }
+    .img-con {
+        height: 350px;
+        margin-bottom: 70px;
+    }
+    .container .part .para {
+        font-size: 52px;
+    }
+    .number {
+        font-size: 66px;
+        margin-top: 60px;
+    }
+    .header .back {
+        margin-left: 30px;
+        font-size: 33px
+    }
+    header .covid-19 {
+        font-size: 44px;
+    }
+    header .dark-mode {
+        height: 40px;
+        margin-left: 970px;
+}
+}
+@media (min-width :1024px) and (max-width:1024px){
+    .container .part {
+        width: 995px;
+        height: 800px;
+        margin: 60px 0 60px 10px;
+    }
+    .img-con {
+        height: 370px;
+        margin-bottom: 50px;
+    }
+    .container .part .para {
+        font-size: 40px;
+    }
+    .number {
+        font-size: 55px;
+    }
+    .header .back {
+        margin-left: 30px;
+        font-size: 45px;
+    }  
+    header .covid-19 {
+        padding-top: 20px;
+        font-size: 55px;
+        margin-left: 15px;
+    }  
+    .covid-img {
+        height: 40px;
+    }
+    header .dark-mode {
+        height: 50px;
+        margin-left: 599px;
+        padding-top: 25px;
+    }
+    .header {
+        height: 100px;
+    }
+}

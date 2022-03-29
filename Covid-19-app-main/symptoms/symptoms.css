@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --primary-color : #FBAD37;
+    --secondary-color : #ffff;
+    --fonts-color : black ;
+}
+.dark-mode {
+    --primary-color : #FBAD37;
+    --secondary-color : rgb(24, 23, 23);
+    --fonts-color : #fff ;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--secondary-color);
+}
+.header{
+    height: 94px;
+    width: 100%;
+    box-shadow: 0px 5px 16px 0px  #c2bfbf;
+    display: flex;
+    background-color: var(--secondary-color);
+}
+#back{
+    height: 22px;
+    margin-left: 15px;
+    margin-top: 33px;
+    font-size: 20px;
+    color: var(--fonts-color);
+}
+header .covid-19 {
+    padding-top: 25px;
+    padding-left: 20px;
+    color: var(--fonts-color);
+}
+.covid-img{
+    height: 30px;
+}
+header .dark-mode{
+    height: 25px;
+    float: right;
+    padding-right: 20px;
+    margin-left: 130px;
+    padding-top: 33px;
+
+}
+.container .part{
+    width: 325px;
+    height: 411px;
+    margin-top: 47px;
+    text-align: center;
+    margin-left: 25px;
+    box-shadow: 0px 5px 16px 0px  #c2bfbf;
+    border-radius: 20px;
+    color: var(--fonts-color);
+}
+ .title{
+    margin-top: 21px;
+    margin-bottom: 21px;
+    font-size: 36px;
+    line-height: 43px;
+    
+}
+ .para {
+    text-align: center;
+    margin-left: 44px;
+    margin-right: 44px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.container .btn{
+    width: 171px;
+    height: 54px;
+    background-color: #FBAD37;
+    color: #ffff;
+    margin-top: 67px;
+    margin-bottom: 87px;
+    margin-left: 90px;
+    border-radius: 20px;
+    border: none;
+    font-size: 25px;
+}
+
+/* Responsive Design for full screen  */
+@media only screen and (min-width :1300px){
+    .part-1{
+        display: flex;
+        margin-left: 30px;
+        justify-content:space-around;
+        flex-wrap: wrap;
+    }
+   #button{
+      margin-left: 500px;
+     
+   }
+   .dark-icon{
+    margin-left: 900px;
+   }
+}
+/* responsive Design for ipad pro */
+ @media only screen and (width :1024px){
+    .part-1{
+        display: flex;
+         margin-left: 30px; 
+         flex-wrap: wrap;
+        justify-content: space-evenly; 
+    }
+    #button{
+        margin-left: 340px;
+       
+     }
+     .dark-icon{
+        margin-left: 550px;
+       }
+} 

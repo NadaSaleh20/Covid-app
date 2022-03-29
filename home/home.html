@@ -1,0 +1,72 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/620f3808e1.js" crossorigin="anonymous"></script>‏
+<link rel="stylesheet" href="./home.css">
+<title>Home</title>
+</head>
+
+<body>
+    <header class="header">
+        <i class="fas fa-arrow-left back" onclick="backIcon();"></i>‏
+        <h1 class="covid-19">C<img src="../assets/coviddd.png" class="covid-img">vid-19</h1>
+        <img src="../assets/dark-mode.png" class="dark-mode-icon" id="icon">
+    </header>
+    <main>
+        <section class="stats">
+
+            <artical class="latest-report">
+
+                <section class="country">
+
+                    <div class="name">Loading...</div>
+
+                    <div class="change-country" id="change-country">Click To Change</div>
+
+                    <div class="search-country hide">
+
+                        <div class="country-list" id="change"></div>
+
+                </section>
+
+                <div class="flex">
+                    <div class="total-cases">
+                        <div class="value">0</div>
+                        <div class="title">Total Cases</div>
+                        <div class="new-value">+0</div>
+                    </div>
+
+                    <div class="recovered">
+                        <div class="value">0</div>
+                        <div class="title">Recovered</div>
+                        <div class="new-value">+0</div>
+                    </div>
+
+                    <div class="deaths">
+                        <div class="value">0</div>
+                        <div class="title">Deaths</div>
+                        <div class="new-value">+0</div>
+                    </div>
+
+                </div>
+
+
+            </artical>
+
+            <div class="chart">
+                <canvas id="axes_line_chart"></canvas>
+            </div>
+
+            <button class="btn-next" onclick="nextIcon()">Next</button>
+        </section>
+
+
+    </main>
+
+    <script src="main-home.js"></script>
+</body>
+
+</html>

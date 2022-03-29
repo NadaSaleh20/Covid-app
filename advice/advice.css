@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --primary-color : #FBAD37;
+    --secondary-color : #ffff;
+    --fonts-color : black ;
+    --part-color:rgb(250, 250, 250);
+}
+.dark-mode {
+    --primary-color : #FBAD37;
+    --secondary-color : rgb(24, 23, 23);
+    --fonts-color : #fff;
+    --part-color:rgb(24, 23, 23);
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--fonts-color);
+}
+.header{
+    display: flex;
+    height: 94px;
+    width: 100%;
+    margin-top: -20px;
+    box-shadow: 0px 5px 16px 0px  #c2bfbf;
+    background-color: var(--part-color);
+}
+.back{
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: 25px;
+}
+header .covid-19{
+    padding-top: 26px;  
+    padding-left: 40px;
+    display: inline;  
+}
+.covid-img{
+    height: 30px;
+}
+header .dark-mode-icon{
+    height: 40px;
+    float: right;
+    padding-right: 20px;
+    padding-top: 26px;
+    padding-left: 100px;
+}
+.container{
+    text-align: center;
+}
+.container .part{
+    width: 314px;
+    height: 198px;
+    margin-top: 47px;
+    text-align: center;
+    margin-left: 50px;
+    box-shadow: 0px 5px 16px 0px  #c2bfbf;
+    border-radius: 20px;
+    background-color: var(--part-color);
+}
+.container .part .title{
+    margin-top: 21px;
+    margin-bottom: 21px;
+    font-size: 36px;
+}
+.container .part .para{
+    text-align: center;
+    margin-left: 44px;
+    margin-right: 44px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.img-adv{
+    width: 102.5px;
+    height: 89px;
+    margin-top: 27px;
+}
+.btn-next{
+    width: 171px;
+    height: 54px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-top: 67px;
+    margin-bottom: 87px;
+    border-radius: 20px;
+    border: none;
+    font-size: 25px;
+}
+@media only screen and (min-width: 1300px) {
+    
+    .cont{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .dark-mode-icon{
+        margin-left: 100px;
+    }
+    header .dark-mode-icon{
+        height: 40px;
+        float: right;
+        padding-right: 20px;
+        padding-top: 26px;
+        padding-left: 950px;
+
+    }
+}
+
+  @media screen and (max-width: 1024px) and (min-width: 450px) {
+    .cont{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+    .container{
+        padding-right: 50px;
+      }
+    header .dark-mode-icon{
+        margin-left: 450px;
+    }
+    .part-1-pro, .part-2-pro, .part-3-pro{
+        display: flex;
+    }
+    .part{
+        width: 414px;
+        height: 298px;
+        margin-top: 47px;
+        text-align: center;
+        margin-left: 50px;
+        box-shadow: 0px 5px 16px 0px  #c2bfbf;
+        border-radius: 20px;
+        background-color: var(--part-color);
+    }
+    .btn-next{
+        margin-left: 30px;
+    }
+    .header{
+        justify-content: space-around;
+    }
+    .covid-19{
+        margin-right: 100px;
+    }
+  }

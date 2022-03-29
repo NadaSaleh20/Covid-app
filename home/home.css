@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--third-color);
+    color: var(--fonts-color );
+}
+:root {
+    --primary-color : #FBAD37;
+    --secondary-color : #F3F3F3;
+    --third-color: #ffff;
+    --fonts-color : black ;
+    --part-color:rgb(250, 250, 250);
+    --change-color: #ffff;
+}
+.dark-mode {
+    --primary-color : #FBAD37;
+    --secondary-color : rgb(24, 23, 23);
+    --third-color: rgb(24, 23, 23);
+    --fonts-color : #fff ;
+    --part-color:rgb(24, 23, 23);
+    --change-color: rgb(34, 32, 32);
+}
+html{
+    font-size: 16px;
+}
+.header{
+    display: flex;
+    height: 94px;
+    width: 100%;
+    margin-top: -20px;
+    box-shadow: 0px 5px 16px 0px  #c2bfbf;
+    background-color: var(--part-color);
+}
+.back{
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: 25px;
+}
+header .covid-19 {
+    padding-top: 26px;  
+    padding-left: 40px;
+    display: inline;
+    
+}
+.covid-img{
+    height: 30px;
+}
+.dark-mode-icon{
+    height: 60px;
+    float: right;
+    padding-right: 20px;
+    padding-top: 26px;
+    padding-left: 130px;
+}    
+.latest-report{
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.country{
+    text-align: center;
+    padding-left: 10px;
+}
+.name{
+    margin-top: 30px;
+}
+.change-country{
+    width: 300px;
+    height: 43px;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: var( --change-color);
+    padding-top: 15px;
+    padding-left: 30px;
+    text-align: left;
+}
+.value{
+    font-size: 45px;
+    margin-top: 35px;
+    color: #FF0000;
+}
+.title{
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--fonts-color);
+}
+.country,
+.total-cases,
+.recovered,
+.deaths{
+    height: 161px;
+    width: 318px;
+    border-Radius: 20px;
+    background-color: var(--secondary-color);
+    margin-top: 52px;
+    padding-bottom: 20px;
+    box-shadow: 0px 5px 16px 0px hsla(0, 0%, 50%, 0.2);
+    text-align: center;
+}
+
+.name{
+    font-size: 2.2em;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.change-country{
+    cursor: pointer;
+}
+.change-country{
+    color: var(--fonts-color);
+}
+.title{
+    font-size: 1.3em;
+}
+.total-cases .value{
+    font-size: 2em;
+    font-weight: bold;
+}
+.recovered .value{
+    font-size: 2em;
+    font-weight: bold;
+    color: #7CC07C;
+}
+.deaths .value{
+    font-size: 2em;
+    font-weight: bold;
+    color: #f44336;
+}
+.new-value{
+    font-size: 1.3em;
+    color:var(--fonts-color);
+}
+.search-country{
+    position: relative;
+    top: 10px;
+}
+.country-list{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    width: 400px;
+    height: 300px;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-y: scroll;
+}
+.change-country:hover .country-list{
+    display: flex;
+}
+.country-list ul{
+    width: 100%;
+}
+
+.country-list ul li{
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #FFF;
+}
+
+  .btn-next{
+    width: 171px;
+    height: 54px;
+    background-color: var(--primary-color);
+    color: #ffff;
+    margin-left: 30%;
+    margin-bottom: 87px;
+    margin-top: -30px;
+    border-radius: 20px;
+    border: none;
+    font-size: 25px;
+}
+@media only screen and (min-width: 1300px) {
+    .dark-mode-icon{
+        margin-left: 900px;
+    }
+    .country{
+        margin-left: 370px;
+    }
+    .flex{
+        display: flex;
+    }
+    .total-cases{
+        margin-left: -50px;
+    }
+     .recovered, .deaths{
+        margin-left: 100px;
+    }
+    .btn-next{
+        margin-left: 570px;
+    }
+}
+
+  
+  @media screen and (max-width: 1024px) and (min-width: 450px) {
+    .dark-mode-icon{
+        margin-left: 600px;
+    }
+    .deaths, .recovered, .total-cases, .country{
+        height: 200px;
+        width: 600px;
+        margin-left: 100px;
+        padding-top: 20px;
+    }
+    .change-country{
+        margin-left: 150px;
+        margin-top: 20px;
+    }
+    .btn-next{
+        margin-left: 400px;
+    }
+  }
+
+  .notActive{
+      display: none;
+  }
